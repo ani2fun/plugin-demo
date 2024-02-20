@@ -5,6 +5,6 @@ public class SampleLibrary {
 
     // SampleLibrary greet method
     public String greet(String name) {
-        return "Hello, " + name;
+        return "Hello, World " + name + "!";
     }
 }

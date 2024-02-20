@@ -1,19 +1,20 @@
 plugins {
     `java-library`
-    id("eu.kakde.gradle.sonatype-maven-central-publisher") version "1.0.0"
+    id("eu.kakde.gradle.sonatype-maven-central-publisher") version "1.0.1"
 }
+
+group = "eu.kakde.plugindemo"
+version = "1.0.0"
 
 val sonatypeUsername: String? by project // this is defined in ~/.gradle/gradle.properties
 val sonatypePassword: String? by project // this is defined in ~/.gradle/gradle.properties
 
 object Meta {
     const val COMPONENT_TYPE = "java" // "java" or "versionCatalog"
-
     const val GROUP = "eu.kakde.plugindemo"
     const val ARTIFACT_ID = "samplelib"
-    const val VERSION = "1.0.0"
-    const val PUBLISHING_TYPE = "AUTOMATIC" // USER_MANAGED or AUTOMATIC
-
+    const val VERSION = "1.0.1"
+    const val PUBLISHING_TYPE = "USER_MANAGED" // USER_MANAGED or AUTOMATIC
     const val DESC = "GitHub Version Catalog Repository for Personal Projects based on Gradle"
     const val LICENSE = "Apache-2.0"
     const val LICENSE_URL = "https://opensource.org/licenses/Apache-2.0"
@@ -68,6 +69,3 @@ repositories {
     mavenCentral()
     gradlePluginPortal()
 }
-
-group = "eu.kakde.plugindemo"
-version = "1.0.0"

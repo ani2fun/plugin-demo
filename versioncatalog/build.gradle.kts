@@ -1,6 +1,6 @@
 plugins {
     `java-library`
-    id("eu.kakde.gradle.sonatype-maven-central-publisher") version "1.0.0"
+    id("eu.kakde.gradle.sonatype-maven-central-publisher") version "1.0.1"
 }
 
 group = "eu.kakde.plugindemo"
@@ -12,19 +12,13 @@ catalog {
     }
 }
 
-// signing {
-//    val signingKey: String? by project
-//    val signingPassword: String? by project
-//    useInMemoryPgpKeys(signingKey, signingPassword)
-// }
-
 object Meta {
     const val COMPONENT_TYPE = "versionCatalog"
 
     const val GROUP = "eu.kakde.plugindemo"
     const val ARTIFACT_ID = "samplecatalog"
     const val VERSION = "1.0.0"
-    const val PUBLISHING_TYPE = "USER_MANAGED" // USER_MANAGED or AUTOMATIC
+    const val PUBLISHING_TYPE = "AUTOMATIC" // USER_MANAGED or AUTOMATIC
 
     const val DESC = "GitHub Version Catalog Repository for Personal Projects based on Gradle"
     const val LICENSE = "Apache-2.0"
