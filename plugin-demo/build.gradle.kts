@@ -6,6 +6,11 @@ plugins {
 group = "eu.kakde.plugindemo"
 version = "1.0.0"
 
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+}
+
 val sonatypeUsername: String? by project // this is defined in ~/.gradle/gradle.properties
 val sonatypePassword: String? by project // this is defined in ~/.gradle/gradle.properties
 
@@ -13,7 +18,7 @@ object Meta {
     const val COMPONENT_TYPE = "java" // "java" or "versionCatalog"
     const val GROUP = "eu.kakde.plugindemo"
     const val ARTIFACT_ID = "samplelib"
-    const val VERSION = "1.0.2" // THIS IS THE VERSION OF THE LIBRARY THAT WILL BE PUBLISHED TO REPO. DON'T CONFUSE IT WITH THE VERSION MENTIONED ABOVE which is, version = "1.0.0
+    const val VERSION = "1.0.3" // THIS IS THE VERSION OF THE LIBRARY THAT WILL BE PUBLISHED TO REPO. DON'T CONFUSE IT WITH THE VERSION MENTIONED ABOVE which is, version = "1.0.0
     const val PUBLISHING_TYPE = "USER_MANAGED" // USER_MANAGED or AUTOMATIC
     val SHA_ALGORITHMS = listOf("SHA-256", "SHA-512") // sha256 and sha512 are supported but not mandatory. Only sha1 is mandatory but it is supported by default.
     const val DESC = "GitHub Version Catalog Repository for Personal Projects based on Gradle"
