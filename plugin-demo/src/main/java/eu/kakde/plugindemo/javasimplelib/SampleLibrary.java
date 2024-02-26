@@ -1,4 +1,4 @@
-package eu.kakde.demo;
+package eu.kakde.plugindemo.javasimplelib;
 
 // SampleLibrary class
 public class SampleLibrary {

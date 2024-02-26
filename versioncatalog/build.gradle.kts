@@ -1,6 +1,6 @@
 plugins {
     `java-library`
-    id("eu.kakde.gradle.sonatype-maven-central-publisher") version "1.0.1"
+    id("eu.kakde.gradle.sonatype-maven-central-publisher") version "1.0.3"
 }
 
 group = "eu.kakde.plugindemo"

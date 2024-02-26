@@ -19,6 +19,8 @@ plugins {
     id("org.gradle.toolchains.foojay-resolver-convention") version "0.8.0"
 }
 
-rootProject.name = "plugin-demo-examples"
 include("versioncatalog")
 include("plugin-demo")
+include("springbootapp")
+rootProject.name = "plugin-demo-examples"
+
