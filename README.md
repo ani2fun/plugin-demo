@@ -22,3 +22,8 @@ Some useful commands:
 ```bash
 ./gradlew :plugin-demo:tasks
 ```
+
+
+> [!NOTE]
+> You can explore published projects utilizing [this plugin](https://plugins.gradle.org/plugin/eu.kakde.gradle.sonatype-maven-central-publisher) by visiting the following link:
+https://repo1.maven.org/maven2/eu/kakde/plugindemo/
