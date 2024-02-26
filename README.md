@@ -2,6 +2,7 @@
 
 This is a sample project aimed at demonstrating publishing to Sonatype Central using the plugin available at: 
 > Plugin portal : https://plugins.gradle.org/plugin/eu.kakde.gradle.sonatype-maven-central-publisher
+> 
 > Source code: https://github.com/ani2fun/sonatype-maven-central-publisher
 
 Some useful commands:
