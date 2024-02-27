@@ -9,6 +9,11 @@ java {
     targetCompatibility = JavaVersion.VERSION_11
 }
 
+repositories {
+    mavenCentral()
+    gradlePluginPortal()
+}
+
 // ------------------------------------
 // PUBLISHING TO SONATYPE CONFIGURATION
 // ------------------------------------
@@ -72,10 +77,4 @@ sonatypeCentralPublishExtension {
             url.set("https://github.com/${Meta.GITHUB_REPO}/issues")
         }
     }
-}
-
-repositories {
-    mavenLocal()
-    mavenCentral()
-    gradlePluginPortal()
 }

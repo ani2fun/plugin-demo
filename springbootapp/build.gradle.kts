@@ -16,7 +16,6 @@ java {
 }
 
 repositories {
-	mavenLocal()
 	mavenCentral()
 	gradlePluginPortal()
 }
@@ -47,7 +46,7 @@ object Meta {
 	val COMPONENT_TYPE = "java" // "java" or "versionCatalog"
 	val GROUP = "eu.kakde.plugindemo"
 	val ARTIFACT_ID = "springbootapp"
-	val VERSION = "1.0.0" // THIS IS THE VERSION OF THE LIBRARY THAT WILL BE PUBLISHED TO REPO. DON'T CONFUSE IT WITH THE VERSION MENTIONED ABOVE which is, version = "1.0.0
+	val VERSION = "1.0.1" // THIS IS THE VERSION OF THE LIBRARY THAT WILL BE PUBLISHED TO REPO. DON'T CONFUSE IT WITH THE VERSION MENTIONED ABOVE which is, version = "1.0.0
 	val PUBLISHING_TYPE = "AUTOMATIC" // USER_MANAGED or AUTOMATIC
 	val SHA_ALGORITHMS =
 		listOf("SHA-512") // sha256 and sha512 are supported but not mandatory. Only sha1 is mandatory but it is supported by default in the plugin.
