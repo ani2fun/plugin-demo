@@ -12,22 +12,25 @@ catalog {
     }
 }
 
+// ------------------------------------
+// PUBLISHING TO SONATYPE CONFIGURATION
+// ------------------------------------
 object Meta {
-    const val COMPONENT_TYPE = "versionCatalog"
-
-    const val GROUP = "eu.kakde.plugindemo"
-    const val ARTIFACT_ID = "samplecatalog"
-    const val VERSION = "1.0.0"
-    const val PUBLISHING_TYPE = "AUTOMATIC" // USER_MANAGED or AUTOMATIC
-
-    const val DESC = "GitHub Version Catalog Repository for Personal Projects based on Gradle"
-    const val LICENSE = "Apache-2.0"
-    const val LICENSE_URL = "https://opensource.org/licenses/Apache-2.0"
-    const val GITHUB_REPO = "ani2fun/plugin-demo.git"
-    const val DEVELOPER_ID = "ani2fun"
-    const val DEVELOPER_NAME = "Aniket Kakde"
-    const val DEVELOPER_ORGANIZATION = "kakde.eu"
-    const val DEVELOPER_ORGANIZATION_URL = "https://www.kakde.eu"
+    val COMPONENT_TYPE = "versionCatalog" // "java" or "versionCatalog"
+    val GROUP = "eu.kakde.plugindemo"
+    val ARTIFACT_ID = "samplecatalog"
+    val VERSION = "1.0.0" // THIS IS THE VERSION OF THE LIBRARY THAT WILL BE PUBLISHED TO REPO. DON'T CONFUSE IT WITH THE VERSION MENTIONED ABOVE which is, version = "1.0.0
+    val PUBLISHING_TYPE = "AUTOMATIC" // USER_MANAGED or AUTOMATIC
+    val SHA_ALGORITHMS =
+        listOf("SHA-512") // sha256 and sha512 are supported but not mandatory. Only sha1 is mandatory but it is supported by default in the plugin.
+    val DESC = "GitHub Version Catalog Repository for Personal Projects based on Gradle"
+    val LICENSE = "Apache-2.0"
+    val LICENSE_URL = "https://opensource.org/licenses/Apache-2.0"
+    val GITHUB_REPO = "ani2fun/plugin-demo.git"
+    val DEVELOPER_ID = "ani2fun"
+    val DEVELOPER_NAME = "Aniket Kakde"
+    val DEVELOPER_ORGANIZATION = "kakde.eu"
+    val DEVELOPER_ORGANIZATION_URL = "https://www.kakde.eu"
 }
 
 val sonatypeUsername: String? by project // this is defined in ~/.gradle/gradle.properties

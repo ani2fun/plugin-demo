@@ -9,25 +9,30 @@ java {
     targetCompatibility = JavaVersion.VERSION_11
 }
 
+// ------------------------------------
+// PUBLISHING TO SONATYPE CONFIGURATION
+// ------------------------------------
+object Meta {
+    val COMPONENT_TYPE = "java" // "java" or "versionCatalog"
+    val GROUP = "eu.kakde.plugindemo"
+    val ARTIFACT_ID = "samplelib"
+    val VERSION =
+        "1.0.3" // THIS IS THE VERSION OF THE LIBRARY THAT WILL BE PUBLISHED TO REPO. DON'T CONFUSE IT WITH THE VERSION MENTIONED ABOVE which is, version = "1.0.0
+    val PUBLISHING_TYPE = "USER_MANAGED" // USER_MANAGED or AUTOMATIC
+    val SHA_ALGORITHMS =
+        listOf("SHA-512") // sha256 and sha512 are supported but not mandatory. Only sha1 is mandatory but it is supported by default in the plugin.
+    val DESC = "GitHub Version Catalog Repository for Personal Projects based on Gradle"
+    val LICENSE = "Apache-2.0"
+    val LICENSE_URL = "https://opensource.org/licenses/Apache-2.0"
+    val GITHUB_REPO = "ani2fun/plugin-demo.git"
+    val DEVELOPER_ID = "ani2fun"
+    val DEVELOPER_NAME = "Aniket Kakde"
+    val DEVELOPER_ORGANIZATION = "kakde.eu"
+    val DEVELOPER_ORGANIZATION_URL = "https://www.kakde.eu"
+}
+
 val sonatypeUsername: String? by project // this is defined in ~/.gradle/gradle.properties
 val sonatypePassword: String? by project // this is defined in ~/.gradle/gradle.properties
-
-object Meta {
-    const val COMPONENT_TYPE = "java" // "java" or "versionCatalog"
-    const val GROUP = "eu.kakde.plugindemo"
-    const val ARTIFACT_ID = "samplelib"
-    const val VERSION = "1.0.3" // THIS IS THE VERSION OF THE LIBRARY THAT WILL BE PUBLISHED TO REPO. DON'T CONFUSE IT WITH THE VERSION MENTIONED ABOVE which is, version = "1.0.0
-    const val PUBLISHING_TYPE = "USER_MANAGED" // USER_MANAGED or AUTOMATIC
-    val SHA_ALGORITHMS = listOf("SHA-512") // sha256 and sha512 are supported but not mandatory. Only sha1 is mandatory but it is supported by default.
-    const val DESC = "GitHub Version Catalog Repository for Personal Projects based on Gradle"
-    const val LICENSE = "Apache-2.0"
-    const val LICENSE_URL = "https://opensource.org/licenses/Apache-2.0"
-    const val GITHUB_REPO = "ani2fun/plugin-demo.git"
-    const val DEVELOPER_ID = "ani2fun"
-    const val DEVELOPER_NAME = "Aniket Kakde"
-    const val DEVELOPER_ORGANIZATION = "kakde.eu"
-    const val DEVELOPER_ORGANIZATION_URL = "https://www.kakde.eu"
-}
 
 sonatypeCentralPublishExtension {
     groupId.set(Meta.GROUP)
