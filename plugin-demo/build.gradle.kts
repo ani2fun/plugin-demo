@@ -1,5 +1,5 @@
 plugins {
-    id("eu.kakde.gradle.sonatype-maven-central-publisher") version "1.0.4"
+    id("eu.kakde.gradle.sonatype-maven-central-publisher") version "1.0.5"
 }
 
 group = "eu.kakde.plugindemo"
