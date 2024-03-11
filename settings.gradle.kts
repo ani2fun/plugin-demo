@@ -1,5 +1,6 @@
 pluginManagement {
     repositories {
+        mavenLocal()
         mavenCentral()
         gradlePluginPortal()
     }
@@ -20,5 +21,5 @@ plugins {
 include("versioncatalog")
 include("plugin-demo")
 include("springbootapp")
+includeBuild("version-catalog-consumer")
 rootProject.name = "plugin-demo-examples"
-

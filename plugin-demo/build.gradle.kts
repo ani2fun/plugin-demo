@@ -1,13 +1,8 @@
 plugins {
-    id("eu.kakde.gradle.sonatype-maven-central-publisher") version "1.0.5"
+    id("eu.kakde.gradle.sonatype-maven-central-publisher") version "1.0.6"
 }
 
 group = "eu.kakde.plugindemo"
-
-java {
-    sourceCompatibility = JavaVersion.VERSION_11
-    targetCompatibility = JavaVersion.VERSION_11
-}
 
 repositories {
     mavenCentral()
@@ -21,11 +16,9 @@ object Meta {
     val COMPONENT_TYPE = "java" // "java" or "versionCatalog"
     val GROUP = "eu.kakde.plugindemo"
     val ARTIFACT_ID = "samplelib"
-    val VERSION =
-        "1.0.3" // THIS IS THE VERSION OF THE LIBRARY THAT WILL BE PUBLISHED TO REPO. DON'T CONFUSE IT WITH THE VERSION MENTIONED ABOVE which is, version = "1.0.0
+    val VERSION = "1.0.4" // VERSION OF THE LIBRARY NEEDS TO BE PUBLISHED TO REPO
     val PUBLISHING_TYPE = "USER_MANAGED" // USER_MANAGED or AUTOMATIC
-    val SHA_ALGORITHMS =
-        listOf("SHA-512") // sha256 and sha512 are supported but not mandatory. Only sha1 is mandatory but it is supported by default in the plugin.
+    val SHA_ALGORITHMS = listOf("SHA-512") // sha256 and sha512 are supported but not mandatory.
     val DESC = "GitHub Version Catalog Repository for Personal Projects based on Gradle"
     val LICENSE = "Apache-2.0"
     val LICENSE_URL = "https://opensource.org/licenses/Apache-2.0"
