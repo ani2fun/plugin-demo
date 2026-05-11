@@ -1,6 +1,6 @@
 plugins {
     `java-library`
-    id("eu.kakde.gradle.sonatype-maven-central-publisher") version "1.0.5"
+    id("eu.kakde.gradle.sonatype-maven-central-publisher") version "1.1.1"
 }
 
 group = "eu.kakde.plugindemo"
@@ -24,7 +24,7 @@ object Meta {
     val COMPONENT_TYPE = "versionCatalog" // "java" or "versionCatalog"
     val GROUP = "eu.kakde.plugindemo"
     val ARTIFACT_ID = "samplecatalog"
-    val VERSION = "1.0.0" // THIS IS THE VERSION OF THE LIBRARY THAT WILL BE PUBLISHED TO REPO. DON'T CONFUSE IT WITH THE VERSION MENTIONED ABOVE which is, version = "1.0.0
+    val VERSION = "1.0.1" // THIS IS THE VERSION OF THE LIBRARY THAT WILL BE PUBLISHED TO REPO. DON'T CONFUSE IT WITH THE VERSION MENTIONED ABOVE which is, version = "1.0.0
     val PUBLISHING_TYPE = "AUTOMATIC" // USER_MANAGED or AUTOMATIC
     val SHA_ALGORITHMS =
         listOf(

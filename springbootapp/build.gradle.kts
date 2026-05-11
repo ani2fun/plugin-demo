@@ -5,7 +5,7 @@ plugins {
     id("io.spring.dependency-management") version "1.1.4"
     kotlin("jvm") version "1.9.22"
     kotlin("plugin.spring") version "1.9.22"
-    id("eu.kakde.gradle.sonatype-maven-central-publisher") version "1.0.6"
+    id("eu.kakde.gradle.sonatype-maven-central-publisher") version "1.1.1"
 }
 
 group = "eu.kakde.plugindemo"
@@ -40,7 +40,7 @@ object Meta {
     val COMPONENT_TYPE = "java" // "java" or "versionCatalog"
     val GROUP = "eu.kakde.plugindemo"
     val ARTIFACT_ID = "springbootapp"
-    val VERSION = "1.0.1" // THIS IS THE VERSION OF THE LIBRARY THAT WILL BE PUBLISHED TO REPO. DON'T CONFUSE IT WITH THE VERSION MENTIONED ABOVE which is, version = "1.0.0
+    val VERSION = "1.0.2" // THIS IS THE VERSION OF THE LIBRARY THAT WILL BE PUBLISHED TO REPO. DON'T CONFUSE IT WITH THE VERSION MENTIONED ABOVE which is, version = "1.0.0
     val PUBLISHING_TYPE = "AUTOMATIC" // USER_MANAGED or AUTOMATIC
     val SHA_ALGORITHMS =
         listOf(

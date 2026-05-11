@@ -1,5 +1,5 @@
 plugins {
-    id("eu.kakde.gradle.sonatype-maven-central-publisher") version "1.0.6"
+    id("eu.kakde.gradle.sonatype-maven-central-publisher") version "1.1.1"
 }
 
 group = "eu.kakde.plugindemo"
@@ -16,7 +16,7 @@ object Meta {
     val COMPONENT_TYPE = "java" // "java" or "versionCatalog"
     val GROUP = "eu.kakde.plugindemo"
     val ARTIFACT_ID = "samplelib"
-    val VERSION = "1.0.4" // VERSION OF THE LIBRARY NEEDS TO BE PUBLISHED TO REPO
+    val VERSION = "1.0.5" // VERSION OF THE LIBRARY NEEDS TO BE PUBLISHED TO REPO
     val PUBLISHING_TYPE = "USER_MANAGED" // USER_MANAGED or AUTOMATIC
     val SHA_ALGORITHMS = listOf("SHA-512") // sha256 and sha512 are supported but not mandatory.
     val DESC = "GitHub Version Catalog Repository for Personal Projects based on Gradle"
